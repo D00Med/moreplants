@@ -493,7 +493,7 @@ minetest.register_craft({
 })
 
 --decorations
-if minetest.get_mapgen_params().mgname == "v7" then
+if minetest.get_mapgen_params().mgname ~= "v6" then
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:desert_sand",
