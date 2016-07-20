@@ -22,16 +22,16 @@ minetest.register_node("moreplants:tallgrass", {
 	walkable = false,
 })
 
-minetest.register_node("moreplants:xlbush", {
-	description = "Tall Bush",
+minetest.register_node("moreplants:aliengrass", {
+	description = "Alien Grass",
 	drawtype = "plantlike",
-	tiles = {"moreplants_xlbush.png"},
+	tiles = {"moreplants_aliengrass.png"},
 	paramtype = "light",
 	is_ground_content = false,
 	buildable_to = true, 
 	sunlight_propagates = true,
-	inventory_image = "moreplants_xlbush.png",
-	visual_scale = 1.4,
+	inventory_image = "moreplants_aliengrass.png",
+	visual_scale = 1.54,
 	wield_scale = {x=0.5, y=0.5, z=0.5},
 	groups = {snappy=3, flammable=1, attatched_node=1},
 	selection_box = {
@@ -40,6 +40,7 @@ minetest.register_node("moreplants:xlbush", {
 	},
 	walkable = false,
 })
+
 
 
 minetest.register_node("moreplants:bulrush", {
@@ -118,6 +119,27 @@ minetest.register_node("moreplants:bigflower", {
 	walkable = false,
 })
 
+minetest.register_node("moreplants:medflower", {
+	description = "Medium Flower",
+	drawtype = "plantlike",
+	tiles = {"moreplants_medflower.png"},
+	paramtype = "light",
+	is_ground_content = false,
+	buildable_to = true, 
+	sunlight_propagates = true,
+	inventory_image = "moreplants_medflower.png",
+	visual_scale = 1,
+	wield_scale = {x=0.5, y=0.5, z=0.5},
+	groups = {snappy=3, flammable=1, attatched_node=1},
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.5, -0.5, -0.5, 0.5, 0, 0.5}
+	},
+	on_use = minetest.item_eat(1),
+	walkable = false,
+})
+
+
 minetest.register_node("moreplants:weed", {
 	description = "Weed",
 	drawtype = "plantlike",
@@ -165,6 +187,44 @@ minetest.register_node("moreplants:spikefern", {
 	buildable_to = true, 
 	sunlight_propagates = true,
 	inventory_image = "moreplants_spikefern.png",
+	visual_scale = 1,
+	wield_scale = {x=0.5, y=0.5, z=0.5},
+	groups = {snappy=3, flammable=1, attatched_node=1},
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.3, -0.5, -0.3, 0.3, 0, 0.3}
+	},
+	walkable = false,
+})
+
+minetest.register_node("moreplants:bluespike", {
+	description = "Blue Spikeflower",
+	drawtype = "plantlike",
+	tiles = {"moreplants_bluespike.png"},
+	paramtype = "light",
+	is_ground_content = false,
+	buildable_to = true, 
+	sunlight_propagates = true,
+	inventory_image = "moreplants_bluespike.png",
+	visual_scale = 1,
+	wield_scale = {x=0.5, y=0.5, z=0.5},
+	groups = {snappy=3, flammable=1, attatched_node=1},
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.3, -0.5, -0.3, 0.3, 0, 0.3}
+	},
+	walkable = false,
+})
+
+minetest.register_node("moreplants:blueflower", {
+	description = "blue flower",
+	drawtype = "plantlike",
+	tiles = {"moreplants_blueflower.png"},
+	paramtype = "light",
+	is_ground_content = false,
+	buildable_to = true, 
+	sunlight_propagates = true,
+	inventory_image = "moreplants_blueflower.png",
 	visual_scale = 1,
 	wield_scale = {x=0.5, y=0.5, z=0.5},
 	groups = {snappy=3, flammable=1, attatched_node=1},
@@ -251,6 +311,65 @@ minetest.register_node("moreplants:cactus", {
 	},
 	walkable = false,
 	damage_per_second = 1
+})
+
+minetest.register_node("moreplants:firefung", {
+	description = "Fire Mushroom",
+	drawtype = "plantlike",
+	tiles = {"moreplants_firemush.png"},
+	paramtype = "light",
+	is_ground_content = false,
+	buildable_to = true, 
+	sunlight_propagates = true,
+	inventory_image = "moreplants_firemush.png",
+	visual_scale = 1,
+	wield_scale = {x=0.5, y=0.5, z=0.5},
+	groups = {snappy=3, igniter=1, hot=3, attatched_node=1},
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.3, -0.5, -0.3, 0.3, 0, 0.3}
+	},
+	walkable = false,
+})
+
+minetest.register_node("moreplants:bluemush", {
+	description = "Blue Cave Mushroom",
+	drawtype = "plantlike",
+	tiles = {"moreplants_bluemush.png"},
+	paramtype = "light",
+	is_ground_content = false,
+	buildable_to = true, 
+	sunlight_propagates = true,
+	inventory_image = "moreplants_bluemush.png",
+	visual_scale = 1,
+	wield_scale = {x=0.5, y=0.5, z=0.5},
+	groups = {snappy=3, flammable=1, attatched_node=1},
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.3, -0.5, -0.3, 0.3, 0, 0.3}
+	},
+	on_use = minetest.item_eat(1),
+	walkable = false,
+})
+
+minetest.register_node("moreplants:caveflower", {
+	description = "Cave flower",
+	drawtype = "plantlike",
+	tiles = {"moreplants_cavefung.png"},
+	paramtype = "light",
+	is_ground_content = false,
+	buildable_to = true, 
+	sunlight_propagates = true,
+	inventory_image = "moreplants_cavefung.png",
+	visual_scale = 1,
+	light_source = 5,
+	wield_scale = {x=0.5, y=0.5, z=0.5},
+	groups = {snappy=3, flammable=1, attatched_node=1},
+	selection_box = {
+		type = "fixed",
+		fixed = {-0.3, -0.5, -0.3, 0.3, 0, 0.3}
+	},
+	walkable = false,
 })
 
 minetest.register_node("moreplants:moonflower", {
@@ -497,7 +616,7 @@ if minetest.get_mapgen_params().mgname ~= "v6" then
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:desert_sand",
-	sidelen = 16,
+	sidelen = 26,
 	fill_ratio = 0.005,
 	biomes = {"desert"},
 	decoration = "moreplants:fireflower",
@@ -508,9 +627,19 @@ minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:dirt_with_grass",
 	sidelen = 16,
-	fill_ratio = 0.03,
+	fill_ratio = 0.01,
 	biomes = {"stone_grassland", "sandstone_grassland"},
 	decoration = "moreplants:tallgrass",
+	height = 1,
+})
+
+minetest.register_decoration({
+	deco_type = "simple",
+	place_on = "default:dirt_with_grass",
+	sidelen = 16,
+	fill_ratio = 0.001,
+	biomes = {"stone_grassland", "sandstone_grassland"},
+	decoration = "moreplants:blueflower",
 	height = 1,
 })
 
@@ -524,21 +653,12 @@ minetest.register_decoration({
 	height = 1,
 })
 
-minetest.register_decoration({
-	deco_type = "simple",
-	place_on = "default:dirt_with_grass",
-	sidelen = 16,
-	fill_ratio = 0.006,
-	biomes = {"deciduous_forest", "sandstone_grassland", "stone_grassland"},
-	decoration = "moreplants:xlbush",
-	height = 1,
-})
 
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:dirt_with_grass",
 	sidelen = 16,
-	fill_ratio = 0.02,
+	fill_ratio = 0.01,
 	biomes = {"rainforest"},
 	decoration = "moreplants:umbrella",
 	height = 1,
@@ -548,7 +668,7 @@ minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:dirt_with_grass",
 	sidelen = 16,
-	fill_ratio = 0.02,
+	fill_ratio = 0.01,
 	biomes = {"rainforest", "coniferous_forest"},
 	decoration = "moreplants:bigfern",
 	height = 1,
@@ -558,7 +678,7 @@ minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:dirt_with_grass",
 	sidelen = 16,
-	fill_ratio = 0.02,
+	fill_ratio = 0.01,
 	biomes = {"rainforest"},
 	decoration = "moreplants:bigflower",
 	height = 1,
@@ -566,9 +686,19 @@ minetest.register_decoration({
 
 minetest.register_decoration({
 	deco_type = "simple",
+	place_on = "default:dirt_with_grass",
+	sidelen = 16,
+	fill_ratio = 0.01,
+	biomes = {"rainforest"},
+	decoration = "moreplants:medflower",
+	height = 1,
+})
+
+minetest.register_decoration({
+	deco_type = "simple",
 	place_on = "default:sand",
 	sidelen = 16,
-	fill_ratio = 0.02,
+	fill_ratio = 0.01,
 	biomes = {"stone_grassland_ocean", "deciduous_forest_ocean"},
 	decoration = "moreplants:bulrush",
 	height = 1,
@@ -576,8 +706,18 @@ minetest.register_decoration({
 
 minetest.register_decoration({
 	deco_type = "simple",
-	place_on = "default:desert_sand",
+	place_on = "default:water_source",
 	sidelen = 16,
+	fill_ratio = 0.005,
+	biomes = {"stone_grassland_ocean", "deciduous_forest_ocean"},
+	decoration = "moreplants:aliengrass",
+	height = 1,
+})
+
+minetest.register_decoration({
+	deco_type = "simple",
+	place_on = "default:desert_sand",
+	sidelen = 26,
 	fill_ratio = 0.005,
 	biomes = {"desert"},
 	decoration = "moreplants:eyeweed",
@@ -596,7 +736,7 @@ minetest.register_decoration({
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:desert_sand",
-	sidelen = 16,
+	sidelen = 26,
 	fill_ratio = 0.005,
 	biomes = {"desert"},
 	decoration = "moreplants:cactus",
@@ -606,7 +746,7 @@ minetest.register_decoration({
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:dirt_with_grass",
-	sidelen = 16,
+	sidelen = 26,
 	fill_ratio = 0.005,
 	biomes = {"deciduous_forest"},
 	decoration = "moreplants:curly",
@@ -616,7 +756,7 @@ minetest.register_decoration({
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:dirt_with_grass",
-	sidelen = 16,
+	sidelen = 26,
 	fill_ratio = 0.005,
 	biomes = {"deciduous_forest"},
 	decoration = "moreplants:bush",
@@ -636,7 +776,7 @@ minetest.register_decoration({
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:snowblock", "default:dirt_with_snow",
-	sidelen = 16,
+	sidelen = 26,
 	fill_ratio = 0.02,
 	biomes = {"taiga"},
 	decoration = "moreplants:deadweed",
@@ -646,7 +786,7 @@ minetest.register_decoration({
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:snowblock", "default:dirt_with_snow",
-	sidelen = 16,
+	sidelen = 26,
 	fill_ratio = 0.02,
 	biomes = {"taiga"},
 	decoration = "moreplants:taigabush",
@@ -676,7 +816,7 @@ minetest.register_decoration({
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:dirt_with_grass",
-	sidelen = 16,
+	sidelen = 26,
 	fill_ratio = 0.02,
 	biomes = {"coniferous_forest"},
 	decoration = "moreplants:weed",
@@ -686,7 +826,7 @@ minetest.register_decoration({
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:dirt_with_grass",
-	sidelen = 16,
+	sidelen = 26,
 	fill_ratio = 0.02,
 	biomes = {"coniferous_forest"},
 	decoration = "moreplants:fern",
@@ -714,3 +854,32 @@ minetest.register_decoration({
 	height = 1,
 })
 end
+
+--ABM spawning
+-- ABM from the Mushroom mod
+--by DanDuncombe and VanessaE
+-- License of code ; WTFPL
+
+-- Natural Spawning ABM
+minetest.register_abm({
+nodenames = {
+"default:stone",
+},
+neighbors = {"air"},
+interval = 300,
+chance = 100,
+action = function(pos, node)
+local top_pos = {x=pos.x, y=pos.y+1, z=pos.z}
+if minetest.get_node(top_pos).name == "air" then
+if minetest.find_node_near(pos, 3, {"default:lava_source"}) then
+minetest.add_node(top_pos, {name="moreplants:firefung"})
+elseif minetest.get_node_light(top_pos, nil) < 8 then
+if minetest.find_node_near(pos, 3, {"default:water_source"}) then
+minetest.add_node(top_pos, {name="moreplants:bluemush"})
+else
+minetest.add_node(top_pos, {name="moreplants:caveflower"})
+end
+end
+end
+end
+})
