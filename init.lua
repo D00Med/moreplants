@@ -611,6 +611,13 @@ minetest.register_craft({
 	}
 })
 
+minetest.register_craft({
+	output = "default:paper 1",
+	recipe = {
+		{"moreplants:weed", "moreplants:weed", "moreplants:weed"},
+	}
+})
+
 --decorations
 if minetest.get_mapgen_params().mgname ~= "v6" then
 minetest.register_decoration({
@@ -866,8 +873,8 @@ nodenames = {
 "default:stone",
 },
 neighbors = {"air"},
-interval = 300,
-chance = 100,
+interval = 500,
+chance = 200,
 action = function(pos, node)
 local top_pos = {x=pos.x, y=pos.y+1, z=pos.z}
 if minetest.get_node(top_pos).name == "air" then
