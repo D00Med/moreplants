@@ -862,31 +862,28 @@ minetest.register_decoration({
 })
 end
 
---ABM spawning
--- ABM from the Mushroom mod
---by DanDuncombe and VanessaE
--- License of code ; WTFPL
+-- Spawn underground plants in newly generated areas
 
--- Natural Spawning ABM
-minetest.register_abm({
-nodenames = {
-"default:stone",
-},
-neighbors = {"air"},
-interval = 500,
-chance = 200,
-action = function(pos, node)
-local top_pos = {x=pos.x, y=pos.y+1, z=pos.z}
-if minetest.get_node(top_pos).name == "air" then
-if minetest.find_node_near(pos, 3, {"default:lava_source"}) then
-minetest.add_node(top_pos, {name="moreplants:firefung"})
-elseif minetest.get_node_light(top_pos, nil) < 8 then
-if minetest.find_node_near(pos, 3, {"default:water_source"}) then
-minetest.add_node(top_pos, {name="moreplants:bluemush"})
-else
-minetest.add_node(top_pos, {name="moreplants:caveflower"})
-end
-end
-end
-end
-})
+local frequency = 200
+
+minetest.register_on_generated(function(minp, maxp)
+	if maxp.y > 0 then
+		return
+	end
+	local stone = minetest.find_nodes_in_area_under_air(minp, maxp,
+		{"default:stone", "default:desert_stone"})
+	for n = 1, #stone do
+		if math.random(1, frequency) == 1 then
+			local pos = {x = stone[n].x, y = stone[n].y + 1, z = stone[n].z }
+			if minetest.find_node_near(pos, 3, {"group:lava"}) then
+				minetest.add_node(pos, {name = "moreplants:firefung"})
+			elseif minetest.get_node_light(pos, nil) < 8 then
+				if minetest.find_node_near(pos, 3, {"group:water"}) then
+					minetest.add_node(pos, {name = "moreplants:bluemush"})
+				else
+					minetest.add_node(pos, {name = "moreplants:caveflower"})
+				end
+			end
+		end
+	end
+end)
