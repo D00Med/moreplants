@@ -692,7 +692,6 @@ minetest.register_decoration({
 	decoration = "moreplants:fireflower",
 	height = 1,
 })
-
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:dirt_with_grass",
@@ -702,7 +701,6 @@ minetest.register_decoration({
 	decoration = "moreplants:tallgrass",
 	height = 1,
 })
-
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:dirt_with_grass",
@@ -712,7 +710,6 @@ minetest.register_decoration({
 	decoration = "moreplants:blueflower",
 	height = 1,
 })
-
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:dirt_with_grass",
@@ -722,8 +719,6 @@ minetest.register_decoration({
 	decoration = "moreplants:jungleflower",
 	height = 1,
 })
-
-
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:dirt_with_grass",
@@ -733,7 +728,6 @@ minetest.register_decoration({
 	decoration = "moreplants:umbrella",
 	height = 1,
 })
-
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:dirt_with_grass",
@@ -743,7 +737,6 @@ minetest.register_decoration({
 	decoration = "moreplants:bigfern",
 	height = 1,
 })
-
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:dirt_with_grass",
@@ -753,7 +746,6 @@ minetest.register_decoration({
 	decoration = "moreplants:bigflower",
 	height = 1,
 })
-
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:dirt_with_grass",
@@ -763,7 +755,6 @@ minetest.register_decoration({
 	decoration = "moreplants:medflower",
 	height = 1,
 })
-
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:sand",
@@ -773,7 +764,6 @@ minetest.register_decoration({
 	decoration = "moreplants:bulrush",
 	height = 1,
 })
-
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:water_source",
@@ -783,7 +773,6 @@ minetest.register_decoration({
 	decoration = "moreplants:aliengrass",
 	height = 1,
 })
-
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:desert_sand",
@@ -793,7 +782,6 @@ minetest.register_decoration({
 	decoration = "moreplants:eyeweed",
 	height = 1,
 })
-
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:stone",
@@ -802,7 +790,6 @@ minetest.register_decoration({
 	decoration = "moreplants:stoneweed",
 	height = 1,
 })
-
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:desert_sand",
@@ -812,7 +799,6 @@ minetest.register_decoration({
 	decoration = "moreplants:cactus",
 	height = 1,
 })
-
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:dirt_with_grass",
@@ -822,7 +808,6 @@ minetest.register_decoration({
 	decoration = "moreplants:curly",
 	height = 1,
 })
-
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:dirt_with_grass",
@@ -832,7 +817,6 @@ minetest.register_decoration({
 	decoration = "moreplants:bush",
 	height = 1,
 })
-
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:snow_block",
@@ -842,7 +826,6 @@ minetest.register_decoration({
 	decoration = "moreplants:moonflower",
 	height = 1,
 })
-
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:snowblock", "default:dirt_with_snow",
@@ -852,7 +835,6 @@ minetest.register_decoration({
 	decoration = "moreplants:deadweed",
 	height = 1,
 })
-
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:snowblock", "default:dirt_with_snow",
@@ -862,7 +844,6 @@ minetest.register_decoration({
 	decoration = "moreplants:taigabush",
 	height = 1,
 })
-
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:snowblock", "default:dirt_with_snow",
@@ -872,7 +853,6 @@ minetest.register_decoration({
 	decoration = "moreplants:groundfung",
 	height = 1,
 })
-
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:dirt_with_grass",
@@ -882,7 +862,6 @@ minetest.register_decoration({
 	decoration = "moreplants:spikefern",
 	height = 1,
 })
-
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:dirt_with_grass",
@@ -892,7 +871,6 @@ minetest.register_decoration({
 	decoration = "moreplants:weed",
 	height = 1,
 })
-
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:dirt_with_grass",
@@ -902,7 +880,6 @@ minetest.register_decoration({
 	decoration = "moreplants:fern",
 	height = 1,
 })
-
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "default:dirt_with_grass",
@@ -912,7 +889,6 @@ minetest.register_decoration({
 	decoration = "moreplants:mushroom",
 	height = 1,
 })
-
 minetest.register_decoration({
 	deco_type = "simple",
 	place_on = "air",
@@ -935,25 +911,50 @@ end
 -- License of code ; WTFPL
 
 -- Natural Spawning ABM
-minetest.register_abm({
-nodenames = {
-"default:stone",
-},
-neighbors = {"air"},
-interval = 500,
-chance = 200,
-action = function(pos, node)
-local top_pos = {x=pos.x, y=pos.y+1, z=pos.z}
-if minetest.get_node(top_pos).name == "air" then
-if minetest.find_node_near(pos, 3, {"default:lava_source"}) then
-minetest.add_node(top_pos, {name="moreplants:firefung"})
-elseif minetest.get_node_light(top_pos, nil) < 8 then
-if minetest.find_node_near(pos, 3, {"default:water_source"}) then
-minetest.add_node(top_pos, {name="moreplants:bluemush"})
-else
-minetest.add_node(top_pos, {name="moreplants:caveflower"})
-end
-end
-end
-end
-})
+-- minetest.register_abm({
+-- nodenames = {
+-- "default:stone",
+-- },
+-- neighbors = {"air"},
+-- interval = 500,
+-- chance = 200,
+-- action = function(pos, node)
+-- local top_pos = {x=pos.x, y=pos.y+1, z=pos.z}
+-- if minetest.get_node(top_pos).name == "air" then
+-- if minetest.find_node_near(pos, 3, {"default:lava_source"}) then
+-- minetest.add_node(top_pos, {name="moreplants:firefung"})
+-- elseif minetest.get_node_light(top_pos, nil) < 8 then
+-- if minetest.find_node_near(pos, 3, {"default:water_source"}) then
+-- minetest.add_node(top_pos, {name="moreplants:bluemush"})
+-- else
+-- minetest.add_node(top_pos, {name="moreplants:caveflower"})
+-- end
+-- end
+-- end
+-- end
+-- })
+-- Spawn underground plants in newly generated areas
+
+local frequency = 200
+
+minetest.register_on_generated(function(minp, maxp)
+	if maxp.y > 0 then
+		return
+	end
+	local stone = minetest.find_nodes_in_area_under_air(minp, maxp,
+		{"default:stone", "default:desert_stone"})
+	for n = 1, #stone do
+		if math.random(1, frequency) == 1 then
+			local pos = {x = stone[n].x, y = stone[n].y + 1, z = stone[n].z }
+			if minetest.find_node_near(pos, 3, {"group:lava"}) then
+				minetest.add_node(pos, {name = "moreplants:firefung"})
+			elseif minetest.get_node_light(pos, nil) < 8 then
+				if minetest.find_node_near(pos, 3, {"group:water"}) then
+					minetest.add_node(pos, {name = "moreplants:bluemush"})
+				else
+					minetest.add_node(pos, {name = "moreplants:caveflower"})
+				end
+			end
+		end
+	end
+end)
