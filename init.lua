@@ -712,7 +712,7 @@ minetest.register_decoration({
 })
 minetest.register_decoration({
 	deco_type = "simple",
-	place_on = "default:dirt_with_grass",
+	place_on = {"default:dirt_with_rainforest_litter", "default:dirt_with_grass"},
 	sidelen = 16,
 	fill_ratio = 0.02,
 	biomes = {"rainforest"},
@@ -721,7 +721,7 @@ minetest.register_decoration({
 })
 minetest.register_decoration({
 	deco_type = "simple",
-	place_on = "default:dirt_with_grass",
+	place_on = {"default:dirt_with_rainforest_litter", "default:dirt_with_grass"},
 	sidelen = 16,
 	fill_ratio = 0.01,
 	biomes = {"rainforest"},
@@ -730,7 +730,7 @@ minetest.register_decoration({
 })
 minetest.register_decoration({
 	deco_type = "simple",
-	place_on = "default:dirt_with_grass",
+	place_on = {"default:dirt_with_rainforest_litter", "default:dirt_with_grass"},
 	sidelen = 16,
 	fill_ratio = 0.01,
 	biomes = {"rainforest", "coniferous_forest"},
@@ -739,7 +739,7 @@ minetest.register_decoration({
 })
 minetest.register_decoration({
 	deco_type = "simple",
-	place_on = "default:dirt_with_grass",
+	place_on = {"default:dirt_with_rainforest_litter", "default:dirt_with_grass"},
 	sidelen = 16,
 	fill_ratio = 0.01,
 	biomes = {"rainforest"},
@@ -748,7 +748,7 @@ minetest.register_decoration({
 })
 minetest.register_decoration({
 	deco_type = "simple",
-	place_on = "default:dirt_with_grass",
+	place_on = {"default:dirt_with_rainforest_litter", "default:dirt_with_grass",
 	sidelen = 16,
 	fill_ratio = 0.01,
 	biomes = {"rainforest"},
@@ -828,7 +828,7 @@ minetest.register_decoration({
 })
 minetest.register_decoration({
 	deco_type = "simple",
-	place_on = "default:snowblock", "default:dirt_with_snow",
+	place_on = {"default:snowblock", "default:dirt_with_snow"},
 	sidelen = 26,
 	fill_ratio = 0.02,
 	biomes = {"taiga"},
@@ -837,7 +837,7 @@ minetest.register_decoration({
 })
 minetest.register_decoration({
 	deco_type = "simple",
-	place_on = "default:snowblock", "default:dirt_with_snow",
+	place_on = {"default:snowblock", "default:dirt_with_snow"},
 	sidelen = 26,
 	fill_ratio = 0.02,
 	biomes = {"taiga"},
@@ -846,7 +846,7 @@ minetest.register_decoration({
 })
 minetest.register_decoration({
 	deco_type = "simple",
-	place_on = "default:snowblock", "default:dirt_with_snow",
+	place_on = {"default:snowblock", "default:dirt_with_snow"},
 	sidelen = 16,
 	fill_ratio = 0.02,
 	biomes = {"taiga"},
