@@ -714,10 +714,13 @@ minetest.register_decoration({
 })
 minetest.register_decoration({
 	deco_type = "simple",
-	place_on = "default:dirt_with_grass",
+	place_on = {"default:dirt_with_grass", "default:sand"},
 	sidelen = 16,
 	fill_ratio = 0.01,
-	biomes = {"stone_grassland", "sandstone_grassland"},
+	biomes = {"deciduous_forest_shore",
+				 "grassland",
+				 "grassland_dunes",
+				 "coniferous_forest_dunes"},
 	decoration = "moreplants:tallgrass",
 	height = 1,
 })
@@ -784,18 +787,19 @@ minetest.register_decoration({
 	place_on = "default:sand",
 	sidelen = 16,
 	fill_ratio = 0.01,
-	biomes = {"stone_grassland_ocean", "deciduous_forest_ocean"},
+	biomes = {"grassland_ocean", "deciduous_forest_ocean"},
 	decoration = "moreplants:bulrush",
 	height = 1,
 })
 minetest.register_decoration({
 	deco_type = "simple",
-	place_on = {"default:water_source", "default:river_water_source"},
+	place_on = {"default:dirt"},
 	sidelen = 16,
 	fill_ratio = 0.005,
-	biomes = {"stone_grassland_ocean", "deciduous_forest_ocean"},
+	biomes = {"rainforest_swamp", "deciduous_forest_shore"},
 	decoration = "moreplants:aliengrass",
 	height = 1,
+	place_offset_y = 1,
 })
 minetest.register_decoration({
 	deco_type = "simple",
@@ -907,6 +911,15 @@ minetest.register_decoration({
 })
 minetest.register_decoration({
 	deco_type = "simple",
+	place_on = {"default:dirt_with_snow", "default:dirt_with_grass", "default:dirt_with_coniferous_litter"},
+	sidelen = 26,
+	fill_ratio = 0.002,
+	biomes = {"coniferous_forest", "taiga"},
+	decoration = "moreplants:bluespike",
+	height = 1,
+})
+minetest.register_decoration({
+	deco_type = "simple",
 	place_on = "default:dirt_with_grass",
 	sidelen = 16,
 	fill_ratio = 0.01,
@@ -914,6 +927,16 @@ minetest.register_decoration({
 	decoration = "moreplants:mushroom",
 	height = 1,
 })
+minetest.register_decoration({
+	deco_type = "simple",
+	place_on = "default:dirt_with_grass",
+	sidelen = 16,
+	fill_ratio = 0.01,
+	biomes = {"deciduous_forest","grassland"},
+	decoration = "moreplants:clover",
+	height = 1,
+})
+
 -- minetest.register_decoration({
 	-- deco_type = "simple",
 	-- place_on = "air",
