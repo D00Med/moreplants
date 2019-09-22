@@ -6,4 +6,4 @@ Changed in V1.2:
 >smaller textures
 
 Changed in V1.3:
->added all plants to the group attatched_node
+>added all plants to the group attached_node
