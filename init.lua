@@ -20,6 +20,7 @@ minetest.register_node("moreplants:tallgrass", {
 		fixed = {-0.5, -0.5, -0.5, 0.5, 0, 0.5}
 	},
 	walkable = false,
+	waving = 1,
 })
 
 minetest.register_node("moreplants:aliengrass", {
@@ -60,6 +61,7 @@ minetest.register_node("moreplants:bulrush", {
 		fixed = {-0.5, -0.5, -0.5, 0.5, 0, 0.5}
 	},
 	walkable = false,
+	waving = 1,
 })
 
 minetest.register_node("moreplants:bigfern", {
@@ -79,6 +81,7 @@ minetest.register_node("moreplants:bigfern", {
 		fixed = {-0.5, -0.5, -0.5, 0.5, 0, 0.5}
 	},
 	walkable = false,
+	waving = 1,
 })
 
 minetest.register_node("moreplants:umbrella", {
@@ -98,6 +101,7 @@ minetest.register_node("moreplants:umbrella", {
 		fixed = {-0.3, -0.5, -0.3, 0.3, 3, 0.3}
 	},
 	walkable = true,
+	waving = 1,
 })
 
 minetest.register_node("moreplants:bigflower", {
@@ -117,6 +121,7 @@ minetest.register_node("moreplants:bigflower", {
 		fixed = {-0.5, -0.5, -0.5, 0.5, 0, 0.5}
 	},
 	walkable = false,
+	waving = 1,
 })
 
 minetest.register_node("moreplants:medflower", {
@@ -137,6 +142,7 @@ minetest.register_node("moreplants:medflower", {
 	},
 	on_use = minetest.item_eat(1),
 	walkable = false,
+	waving = 1,
 })
 
 
@@ -157,6 +163,7 @@ minetest.register_node("moreplants:weed", {
 		fixed = {-0.5, -0.5, -0.5, 0.5, 0, 0.5}
 	},
 	walkable = false,
+	waving = 1,
 })
 
 minetest.register_node("moreplants:stoneweed", {
@@ -176,6 +183,7 @@ minetest.register_node("moreplants:stoneweed", {
 		fixed = {-0.3, -0.5, -0.3, 0.3, 0, 0.3}
 	},
 	walkable = false,
+	waving = 1,
 })
 
 minetest.register_node("moreplants:spikefern", {
@@ -195,6 +203,7 @@ minetest.register_node("moreplants:spikefern", {
 		fixed = {-0.3, -0.5, -0.3, 0.3, 0, 0.3}
 	},
 	walkable = false,
+	waving = 1,
 })
 
 minetest.register_node("moreplants:bluespike", {
@@ -214,6 +223,7 @@ minetest.register_node("moreplants:bluespike", {
 		fixed = {-0.3, -0.5, -0.3, 0.3, 0, 0.3}
 	},
 	walkable = false,
+	waving = 1,
 })
 
 minetest.register_node("moreplants:blueflower", {
@@ -233,6 +243,7 @@ minetest.register_node("moreplants:blueflower", {
 		fixed = {-0.3, -0.5, -0.3, 0.3, 0, 0.3}
 	},
 	walkable = false,
+	waving = 1,
 })
 
 minetest.register_node("moreplants:eyeweed", {
@@ -253,6 +264,7 @@ minetest.register_node("moreplants:eyeweed", {
 		fixed = {-0.3, -0.5, -0.3, 0.3, 0, 0.3}
 	},
 	walkable = false,
+	waving = 1,
 })
 
 minetest.register_node("moreplants:fern", {
@@ -272,6 +284,7 @@ minetest.register_node("moreplants:fern", {
 		fixed = {-0.3, -0.5, -0.3, 0.3, 0, 0.3}
 	},
 	walkable = false,
+	waving = 1,
 })
 
 minetest.register_node("moreplants:bush", {
@@ -291,6 +304,7 @@ minetest.register_node("moreplants:bush", {
 		fixed = {-0.3, -0.5, -0.3, 0.3, 0, 0.3}
 	},
 	walkable = false,
+	waving = 1,
 })
 
 minetest.register_node("moreplants:cactus", {
@@ -389,6 +403,7 @@ minetest.register_node("moreplants:moonflower", {
 		fixed = {-0.3, -0.5, -0.3, 0.3, 0, 0.3}
 	},
 	walkable = false,
+	waving = 1,
 })
 
 minetest.register_node("moreplants:fireflower", {
@@ -408,6 +423,7 @@ minetest.register_node("moreplants:fireflower", {
 		fixed = {-0.2, -0.5, -0.2, 0.2, 0, 0.2}
 	},
 	walkable = false,
+	waving = 1,
 })
 
 minetest.register_node("moreplants:deadweed", {
@@ -415,7 +431,7 @@ minetest.register_node("moreplants:deadweed", {
 	drawtype = "plantlike",
 	tiles = {"moreplants_deadweed.png"},
 	paramtype = "light",
-	light_source = 5,
+	light_source = 2,
 	is_ground_content = false,
 	buildable_to = true, 
 	sunlight_propagates = true,
@@ -435,7 +451,7 @@ minetest.register_node("moreplants:taigabush", {
 	drawtype = "plantlike",
 	tiles = {"moreplants_tundrabush.png"},
 	paramtype = "light",
-	light_source = 5,
+	light_source = 2,
 	is_ground_content = false,
 	buildable_to = true, 
 	sunlight_propagates = true,
@@ -448,6 +464,7 @@ minetest.register_node("moreplants:taigabush", {
 		fixed = {-0.2, -0.5, -0.2, 0.2, 0, 0.2}
 	},
 	walkable = false,
+	waving = 1,
 })
 
 minetest.register_node("moreplants:glowfung", {
@@ -458,7 +475,7 @@ minetest.register_node("moreplants:glowfung", {
 	is_ground_content = false,
 	buildable_to = true, 
 	sunlight_propagates = true,
-	light_source = 20,
+	light_source = default.LIGHT_MAX-2,
 	legacy_wallmounted = true,
 	selection_box = {
 		type = "wallmounted",
@@ -492,6 +509,7 @@ minetest.register_node("moreplants:jungleflower", {
 		fixed = {-0.4, -0.5, -0.4, 0.4, 0.4, 0.4}
 	},
 	walkable = false,
+	waving = 1,
 })
 
 minetest.register_node("moreplants:mushroom", {
@@ -563,6 +581,7 @@ minetest.register_node("moreplants:clover", {
 		type = "fixed",
 		fixed = {-0.5, -0.5, -0.5, 0.5, -0.1, 0.5}
 	},
+	waving = 1,
 })
 
 minetest.register_node("moreplants:groundfung", {
@@ -617,7 +636,6 @@ minetest.register_node("moreplants:palmleaves2", {
 	visual_scale = 2.5,
 	tiles = {"moreplants_palmleaves2.png"},
 	inventory_image = "moreplants_palmleaves2.png",
-	use_texture_alpha = true,
 	paramtype = "light",
 	paramtype2 = "wallmounted",
 	sunlight_propagates = false,
@@ -628,6 +646,7 @@ minetest.register_node("moreplants:palmleaves2", {
 		fixed = {-0.3, -0.5, -0.3, 0.3, -0.2, 0.3}
 	},
 	groups = {cracky=3,dig_immediate=3},
+	waving = 1,
 })
 
 minetest.register_node("moreplants:palmleaves1", {
@@ -636,7 +655,6 @@ minetest.register_node("moreplants:palmleaves1", {
 	visual_scale = 4.0,
 	tiles = {"moreplants_palmleaves.png"},
 	inventory_image = "moreplants_palmleaves.png",
-	use_texture_alpha = true,
 	paramtype = "light",
 	paramtype2 = "wallmounted",
 	sunlight_propagates = false,
@@ -694,10 +712,13 @@ minetest.register_decoration({
 })
 minetest.register_decoration({
 	deco_type = "simple",
-	place_on = "default:dirt_with_grass",
+	place_on = {"default:dirt_with_grass", "default:sand"},
 	sidelen = 16,
 	fill_ratio = 0.01,
-	biomes = {"stone_grassland", "sandstone_grassland"},
+	biomes = {"deciduous_forest_shore",
+				 "grassland",
+				 "grassland_dunes",
+				 "coniferous_forest_dunes"},
 	decoration = "moreplants:tallgrass",
 	height = 1,
 })
@@ -730,7 +751,11 @@ minetest.register_decoration({
 })
 minetest.register_decoration({
 	deco_type = "simple",
-	place_on = {"default:dirt_with_rainforest_litter", "default:dirt_with_grass"},
+	place_on = {
+		"default:dirt_with_rainforest_litter",
+		"default:dirt_with_grass",
+		"default:dirt_with_coniferous_litter",
+	},
 	sidelen = 16,
 	fill_ratio = 0.01,
 	biomes = {"rainforest", "coniferous_forest"},
@@ -760,18 +785,19 @@ minetest.register_decoration({
 	place_on = "default:sand",
 	sidelen = 16,
 	fill_ratio = 0.01,
-	biomes = {"stone_grassland_ocean", "deciduous_forest_ocean"},
+	biomes = {"grassland_ocean", "deciduous_forest_ocean"},
 	decoration = "moreplants:bulrush",
 	height = 1,
 })
 minetest.register_decoration({
 	deco_type = "simple",
-	place_on = "default:water_source",
+	place_on = {"default:dirt"},
 	sidelen = 16,
 	fill_ratio = 0.005,
-	biomes = {"stone_grassland_ocean", "deciduous_forest_ocean"},
+	biomes = {"rainforest_swamp", "deciduous_forest_shore"},
 	decoration = "moreplants:aliengrass",
 	height = 1,
+	place_offset_y = 1,
 })
 minetest.register_decoration({
 	deco_type = "simple",
@@ -787,6 +813,7 @@ minetest.register_decoration({
 	place_on = "default:stone",
 	sidelen = 16,
 	fill_ratio = 0.001,
+	biomes = {"tundra"},
 	decoration = "moreplants:stoneweed",
 	height = 1,
 })
@@ -819,7 +846,7 @@ minetest.register_decoration({
 })
 minetest.register_decoration({
 	deco_type = "simple",
-	place_on = "default:snow_block",
+	place_on = "default:stone",
 	sidelen = 16,
 	fill_ratio = 0.005,
 	biomes = {"tundra"},
@@ -855,7 +882,7 @@ minetest.register_decoration({
 })
 minetest.register_decoration({
 	deco_type = "simple",
-	place_on = "default:dirt_with_grass",
+	place_on = {"default:dirt_with_grass", "default:dirt_with_coniferous_litter"},
 	sidelen = 16,
 	fill_ratio = 0.02,
 	biomes = {"coniferous_forest"},
@@ -864,7 +891,7 @@ minetest.register_decoration({
 })
 minetest.register_decoration({
 	deco_type = "simple",
-	place_on = "default:dirt_with_grass",
+	place_on = {"default:dirt_with_grass", "default:dirt_with_coniferous_litter"},
 	sidelen = 26,
 	fill_ratio = 0.02,
 	biomes = {"coniferous_forest"},
@@ -873,11 +900,20 @@ minetest.register_decoration({
 })
 minetest.register_decoration({
 	deco_type = "simple",
-	place_on = "default:dirt_with_grass",
+	place_on = {"default:dirt_with_grass", "default:dirt_with_coniferous_litter"},
 	sidelen = 26,
 	fill_ratio = 0.02,
 	biomes = {"coniferous_forest"},
 	decoration = "moreplants:fern",
+	height = 1,
+})
+minetest.register_decoration({
+	deco_type = "simple",
+	place_on = {"default:dirt_with_snow", "default:dirt_with_grass", "default:dirt_with_coniferous_litter"},
+	sidelen = 26,
+	fill_ratio = 0.002,
+	biomes = {"coniferous_forest", "taiga"},
+	decoration = "moreplants:bluespike",
 	height = 1,
 })
 minetest.register_decoration({
@@ -889,6 +925,16 @@ minetest.register_decoration({
 	decoration = "moreplants:mushroom",
 	height = 1,
 })
+minetest.register_decoration({
+	deco_type = "simple",
+	place_on = "default:dirt_with_grass",
+	sidelen = 16,
+	fill_ratio = 0.01,
+	biomes = {"deciduous_forest","grassland"},
+	decoration = "moreplants:clover",
+	height = 1,
+})
+
 -- minetest.register_decoration({
 	-- deco_type = "simple",
 	-- place_on = "air",
@@ -901,7 +947,8 @@ minetest.register_decoration({
 -- })
 end
 
-if minetest.get_mapgen_params().mgname ~= "v6" or minetest.get_mapgen_params().mgname ~= "singlenode" then
+local mgname = minetest.get_mapgen_setting("mg_name")
+if mgname ~= "v6" and mgname ~= "singlenode" then
 	moreplants.mapgen()
 end
 
