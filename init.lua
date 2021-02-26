@@ -636,7 +636,6 @@ minetest.register_node("moreplants:palmleaves2", {
 	visual_scale = 2.5,
 	tiles = {"moreplants_palmleaves2.png"},
 	inventory_image = "moreplants_palmleaves2.png",
-	use_texture_alpha = true,
 	paramtype = "light",
 	paramtype2 = "wallmounted",
 	sunlight_propagates = false,
@@ -656,7 +655,6 @@ minetest.register_node("moreplants:palmleaves1", {
 	visual_scale = 4.0,
 	tiles = {"moreplants_palmleaves.png"},
 	inventory_image = "moreplants_palmleaves.png",
-	use_texture_alpha = true,
 	paramtype = "light",
 	paramtype2 = "wallmounted",
 	sunlight_propagates = false,
@@ -949,7 +947,8 @@ minetest.register_decoration({
 -- })
 end
 
-if minetest.get_mapgen_params().mgname ~= "v6" or minetest.get_mapgen_params().mgname ~= "singlenode" then
+local mgname = minetest.get_mapgen_setting("mg_name")
+if mgname ~= "v6" and mgname ~= "singlenode" then
 	moreplants.mapgen()
 end
 
